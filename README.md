@@ -44,3 +44,44 @@ class main{
         }
     }
 }
+
+
+//PALINDROME NUMBER
+class main{
+    public static void main(String[] args){
+        int num = 12321;
+        int number = num;
+        int reversed = 0;
+        while(num!=0){
+            int digit = num%10;
+            reversed = reversed *10+digit;
+            num/=10;
+        }
+        if(number==reversed){
+            System.out.println("is palindrome");
+        }else{
+            System.out.println("is not palindrome");
+        }
+    }
+}
+
+
+//PALINDROME STRING
+class main{
+    public static void main(String[] args){
+        String name = "madam";
+        name = name.toLowerCase();
+        int left = 0;
+        int right = name.length()-1;
+        while(left<right){
+            if(name.charAt(left)!=name.charAt(right)){
+                System.out.println("Not Pali");
+                return;
+            }
+            left++;
+            right--;
+        }
+        System.out.println("Pali");
+    }
+}
+
