@@ -12,6 +12,8 @@ class main{
         System.out.println("Prime");
     }
 }
+
+
 //SQUARE NUMBER:
 class Main {
     public static void main(String[] args) {
@@ -22,5 +24,23 @@ class Main {
             result = result * num;
         }
         System.out.println(result);
+    }
+}
+
+
+//FIBONACCI SERIES:
+class main{
+    public static void main(String[] args){
+        int N = 10;
+        int num1 = 0;
+        int num2 = 1;
+        System.out.println(num1);
+        System.out.println(num2);
+        for(int i = 0;i<=N;i++){
+            System.out.println(num1);
+            int temp = num1+num2;
+            num1=num2;
+            num2 = temp;
+        }
     }
 }
