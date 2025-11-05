@@ -85,3 +85,34 @@ class main{
     }
 }
 
+//LARGEST NUMBER IN ARRAY
+class main{
+    public static void main(String[] args){
+        int max = 0;
+        int[] arr = {1,2,3,4};
+        for(int i =0;i <arr.length;i++){
+            if(arr[i]>max){
+                max = arr[i];
+            }
+        }
+        System.out.println(max);
+    }
+}
+
+//PERFECT NUMBER
+class main{
+    public static void main(String[] args){
+        int num = 28;
+        int result = 0;
+        for(int i = 1;i<num;i++){
+            if(num%i==0){
+                result = result+i;
+            }if(result==num){
+                System.out.println("Perfect");
+                return;
+            }
+        }
+        System.out.println("Not Perfect");
+    }
+}
+
